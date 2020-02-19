@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+
+  extract:
+    restart: always
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+      target: extract
+    volumes:
+      - $DATA_DIRECTORY:/data
+      - $WOW_DIRECTORY:/wowdir
+    env_file:
+      - ../.env

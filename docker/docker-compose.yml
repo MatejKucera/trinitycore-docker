@@ -1,0 +1,46 @@
+version: '3.7'
+
+services:
+
+  auth:
+    restart: always
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+      target: auth
+    volumes:
+      - $CONFIG_DIRECTORY:/etc/wow
+    env_file:
+      - ../.env
+
+  world:
+    restart: always
+    build:
+        context: ../
+        dockerfile: docker/Dockerfile
+        target: world
+    volumes:
+        - $CONFIG_DIRECTORY:/etc/wow
+    env_file:
+        - ../.env
+
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+        MYSQL_ROOT_PASSWORD: $DB_PASSWORD
+    volumes:
+        - $DB_FILES:/var/lib/mysql
+    ports:
+        - $LOCAL_DB_PORT:3306
+
+  pma:
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    environment:
+        PMA_HOST: $DB_HOST
+        PMA_USER: $DB_USERNAME
+        PMA_PASSWORD: $DB_PASSWORD
+    ports:
+        - $LOCAL_PMA_PORT:80
