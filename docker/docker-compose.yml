@@ -10,6 +10,7 @@ services:
       target: auth
     volumes:
       - $CONFIG_DIRECTORY:/etc/wow
+      - $LOG_DIRECTORY:/wowlogs
     ports:
       - $AUTH_PORT:3724
     env_file:
@@ -24,6 +25,7 @@ services:
     volumes:
         - $CONFIG_DIRECTORY:/etc/wow
         - $DATA_DIRECTORY:/wowdata
+        - $LOG_DIRECTORY:/wowlogs
     ports: 
         - $WORLD_PORT:8085
     env_file:
