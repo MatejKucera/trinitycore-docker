@@ -6,8 +6,8 @@ RUN update-alternatives --install /usr/bin/cc cc /usr/bin/clang 100 && \
     update-alternatives --install /usr/bin/c++ c++ /usr/bin/clang 100
 
 RUN mkdir /wow && \
-    git clone -b 3.3.5 git://github.com/TrinityCore/TrinityCore.git /repository && \
-    mkdir -p /repository/build && cd /repository/build && cmake ../ -DCMAKE_INSTALL_PREFIX=/wow && make && make -j $(nproc) install
+    git clone -b 3.3.5 git://github.com/TrinityCore/TrinityCore.git /repository
+RUN mkdir -p /repository/build && cd /repository/build && cmake ../ -DCMAKE_INSTALL_PREFIX=/wow && make && make -j $(nproc) install
 
 COPY docker/script/wait-for-it.sh /wait-for-it.sh
 RUN chmod +x /wait-for-it.sh
