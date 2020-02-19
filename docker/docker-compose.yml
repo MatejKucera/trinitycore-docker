@@ -21,6 +21,7 @@ services:
         target: world
     volumes:
         - $CONFIG_DIRECTORY:/etc/wow
+        - $DATA_DIRECTORY:/wowdata
     env_file:
         - ../.env
 
