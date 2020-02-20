@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+
+  apache:
+    volumes: 
+      - ../reg:/app
+
+  php:
+    volumes: 
+      - ../reg:/app
+
+  pma:
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    environment:
+        PMA_HOST: $DB_HOST
+        PMA_USER: $DB_USERNAME
+        PMA_PASSWORD: $DB_PASSWORD
+    ports:
+        - $LOCAL_PMA_PORT:80

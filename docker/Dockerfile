@@ -34,3 +34,18 @@ COPY docker/script/entrypoint-world.sh /entrypoint.sh
 FROM env AS extract
 
 COPY docker/script/entrypoint-extract.sh /entrypoint.sh
+
+
+
+
+FROM matejkucera/php AS php
+
+COPY docker/script/entrypoint-php.sh /entrypoint.sh
+COPY reg /app
+
+
+
+
+FROM matejkucera/apache AS apache
+
+COPY reg /app

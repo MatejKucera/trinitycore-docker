@@ -1,0 +1,12 @@
+
+body {
+    background-color: #2d3436;
+    color: #ffeaa7;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.container {
+    max-width: 800px;
+    margin-top: 40px;
+}
