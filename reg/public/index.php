@@ -68,7 +68,7 @@ if($_POST) {
 
                 <div class="col-12 header">
                     <h1>Random RP</h1>
-                    <a href="https://discord.gg/zpqxNKq">Discord</a> | set realmlist kaji.matejkucera.cz
+                    <a href="https://discord.gg/zpqxNKq">Discord</a> | set realmlist 62.171.144.185
                 </div>
             
                 <div class="col-12">
@@ -119,8 +119,18 @@ if($_POST) {
                 </div>
 
                 <div class="col-12">
-                    <h2>Setting</h2>
-                    <p>TODO dopsat</p>
+                    <h2>Lore</h2>
+                    <p>Příběh se odehrává během války s Králem Lichů na Northrendu.
+                        Armáda Stříbrné Výpravy zaútočila na Northrend, spojila se s Aliancí i Hordou a dokonce i s Rytíři Smrti z Acherusu v posledním útoku na Citadelu Ledové Koruny, pod názvem Popelavý Verdikt. Tirion Fordring, šampion Světla a Ashbringer, vedl útok na Citadelu společně s hrdiny ze všech frakcí, probojoval se skrze šampiony Pohromy a utkal se s Králem Lichů na vrcholu Ledové Koruny.
+                        A zde nastal osudový moment, kdy Arthas uvěznil Tiriona v ledovém sevření, zabil šampiony Azerothu a zvedl Mrazivý Smutek, aby před Tirionovýma očima vzkřísil šampiony jakožto generály Pohromy.
+                        Tirion žádal Světlo o pomoc, aby ho osvobodilo z ledového sevření a dalo mu sílu Krále Lichů porazit.
+                        </p><p>
+                        Ale pomoc nepřišla. Světlo nebylo dost silné, aby prozářilo temnotu Citadely a pomohlo Tirionovi zvítězit. Král Lichů vzkřísil šampiony Azerothu jako své nové generály. Co se stalo s Tirionem, to už nikdo neví.
+                        Šampioni se obrátili proti armádě Popelavého Verdiktu a rozbili obléhání citadely. Nemrtvé armády pod novým velením a zvýšenou silou vyhnaly veškeré útočníky z celé Ledové Koruny, kde se armáda Azerothu rozpadla na několik částí.
+                        </p><p>
+                        Náše část světa jest v Hearthglenu, nové državě Stříbrné Výpravy. Sem se Stříbrná Výprava vrátila po své porážce v Northrendu, vyhnala zbytky Šarlatové Výpravy a vybudovala město schopné ubytovat mnohé uprchlíky ze všech koutů Lordaeronu. Pro tento účel byla i západní část Morových Zemí očištěna paladiny z Výpravy a druidy z Cenariova Kruhu.
+                        </p><p>
+                        A zde provede Výprava poslední obranu proti masivní invazi, která se řítí z Northrendu.</p>
                 </div>
 
                 <div class="col-12">

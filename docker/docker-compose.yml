@@ -59,5 +59,3 @@ services:
         MYSQL_ROOT_PASSWORD: $DB_PASSWORD
     volumes:
         - $DB_FILES:/var/lib/mysql
-    ports:
-        - $LOCAL_DB_PORT:3306
