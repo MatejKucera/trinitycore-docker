@@ -54,7 +54,7 @@ if($_POST) {
 
     <head>
         <meta charset="UTF-8">
-        <title>Random RP</title>
+        <title>Hearthglen RP Server</title>
         <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap&subset=latin-ext" rel="stylesheet"> 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -67,7 +67,7 @@ if($_POST) {
             <div class="row">
 
                 <div class="col-12 header">
-                    <h1>Random RP</h1>
+                    <h1>Hearthglen RP Server</h1>
                     <a href="https://discord.gg/zpqxNKq">Discord</a> | set realmlist 62.171.144.185
                 </div>
             
